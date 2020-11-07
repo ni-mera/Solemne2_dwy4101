@@ -43,6 +43,6 @@ class PlanesTestCase(TestCase):
         plan = Plan.objects.get(name="Plan O")
         self.assertEqual(plan.generarDescuento(), 0.6)
 
-    def test_descuento(self):
+    def test_precio_final(self):
         plan = Plan.objects.get(name="Plan O")
         self.assertEqual(plan.calcularPrecioFinal(), 11996)
